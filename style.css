@@ -26,7 +26,7 @@ a{
 
 /* Hero section */
 #hero{
-    background-image: url(Filipstrozik/images/hero.jpg);
+    background-image: url(./images/hero.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
