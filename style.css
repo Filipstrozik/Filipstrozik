@@ -122,7 +122,6 @@ a{
 
 #services .services{
     flex-direction:  column;
-    text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 5% 0;
@@ -272,7 +271,6 @@ img{
     margin-right: 5%;
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 #about .col-left .about-img {
     height: 100%;
