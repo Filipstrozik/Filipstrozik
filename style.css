@@ -40,7 +40,7 @@ a{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: -1;
 }
 #hero .hero{
@@ -52,7 +52,7 @@ a{
 #hero h1{
     display: block;
     width: fit-content;
-    font-size: 7rem;
+    font-size: 4rem;
     position: relative;
     color: transparent;
     animation: text_reveal 0.5s ease forwards;
@@ -124,7 +124,7 @@ a{
     flex-direction:  column;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 5% 0;
+    padding: 100px 0;
 }
 
 .section-title{
@@ -229,7 +229,7 @@ img{
     min-width: 0px;
     flex-direction:  column-reverse;
     text-align: center;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 5% 0;
     align-items: center;
@@ -238,6 +238,10 @@ img{
     width: 50%;
     height: 50%;
 
+}
+
+#about .col-right {
+	width: 100%;
 }
 
 #about .col-right h1{
@@ -297,10 +301,12 @@ img{
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 0px auto;
+    width: 90%;
 }
 #contact .contact-items {
-    width: 500px;
+    /* width: 500px; */
+    width: 100%;
 }
 
 #contact .contact-item {
@@ -383,3 +389,137 @@ img{
     font-size: 1.5rem;
 }
 
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	/* Hero */
+	#hero h1 {
+		font-size: 7rem;
+	}
+	/* End Hero */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+
+	/* About */
+	#about .about {
+		flex-direction: row;
+	}
+	#about .col-left {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+	#about .about .col-left .about-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid crimson;
+	}
+	#about .col-right {
+		text-align: left;
+		padding: 30px;
+	}
+	#about .col-right h1 {
+		text-align: left;
+	}
+	/* End About */
+
+	/* contact  */
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	/* End contact  */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
