@@ -302,11 +302,13 @@ img{
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 10px auto;
+    padding: 0px;
     width: 90%;
 }
 #contact .contact-items {
     /* width: 500px; */
+    padding: 30px;
     width: 100%;
 }
 
