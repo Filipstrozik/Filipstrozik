@@ -47,7 +47,7 @@ a{
 	width: 100%;
 	height: 100%;
 	max-width: 1300px;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -110,7 +110,7 @@ a{
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
+	margin-right: 0px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -310,7 +310,7 @@ a{
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.9;
+    opacity: 0.83;
     z-index: -1;
 }
 #services .service-bottom .icon {
