@@ -297,10 +297,11 @@ a{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    transition: 100ms
+    transition: 100ms;
+    filter: drop-shadow(10px 10px 10px black)
 }
 #services .service-item:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #services .service-item::after{
     content: '';
@@ -621,11 +622,11 @@ img{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		margin: 0;
+		margin: 50px;
 	}
 	#contact .contact-item {
 		width: 30%;
-		margin: 0;
+		margin: 10px;
 		flex-direction: row;
 	}
 	#contact .contact-item .icon {
@@ -670,6 +671,6 @@ img{
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
-		margin: 1.5%;
+		margin: 2%;
 	}
 }
