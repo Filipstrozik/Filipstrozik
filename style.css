@@ -318,6 +318,8 @@ a{
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
+    display: inline-block;
+    flex: auto;
 }
 #services .service-item h2 {
 	font-size: 2rem;

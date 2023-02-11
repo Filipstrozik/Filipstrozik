@@ -1,294 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My Website</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
 
-
     <section id="header">
-        <div class="header container">
-          <div class="nav-bar">
-            <div class="brand">
-              <a href="#hero">
-                <h1>Filip Strózik</h1>
-              </a>
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>Filip Strózik</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
             </div>
-            <div class="nav-list">
-              <div class="hamburger">
-                <div class="bar"></div>
-              </div>
-              <ul>
-                <li><a href="#hero" data-after="Home">Home</a></li>
-                <li><a href="#services" data-after="Projects">Projects</a></li>
-                <li><a href="#learning" data-after="Learning">Learning</a></li>
-                <li><a href="#about" data-after="About">About</a></li>
-                <li><a href="#contact" data-after="Contact">Contact</a></li>
-              </ul>
-            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Projects">Projects</a></li>
+              <li><a href="#learning" data-after="Learning">Learning</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- End Header -->
 
-
-     
     <!-- hero section -->
-    <section id ="hero"> 
-        <div class="hero container">
-            <div>
-                <h1>Hi, <span></span></h1>
-                <h1>My name is <span></span></h1>
-                <h1>Filip Strózik<span></span></h1>
-                <a href="#services" type="button" class="cta">Portfolio</a>
-            </div>
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hi, <span></span></h1>
+          <h1>My name is <span></span></h1>
+          <h1>Filip Strózik<span></span></h1>
+          <a href="#services" type="button" class="cta">Portfolio</a>
         </div>
+      </div>
     </section>
     <!-- End hero section -->
 
     <!-- Serives do zmiany -->
     <section id="services">
-        <div class="services container">
-            <div class="service-top">
-                <h1 class="section-title">Projects</h1>
-                <p> Here you can find some projects I've been working on!</p>
-            </div>
-            <div class="service-bottom">
-                <div class="service-item" style="background-image:  url(https://static.doofinder.com/main-files/uploads/2018/03/abandoned-cart-carritos-abandonados.jpg");>
-                    <a href="https://github.com/Filipstrozik/knsolvro">
-                        <div class="icon"> <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt=""></div>
-                        <div>
-                            <h2>Shopping Cart based on User's Session - NestJS API</h2>
-                            <p>Backend API to handle user cart functionalities, main feature is sharing the cart and copying it to other users session. It is my recruitment response for science club SOLVRO.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="service-item" style="background-image:  url(./images/gPlacestoExcel.PNG);">
-                    <a href="https://github.com/Filipstrozik/GPlacesToExcel">
-                        <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png" alt=""></div>
-                        <div>
-                            <h2>Python Selenium Web Scraper - Google maps places to excel sheet.</h2>
-                            <p>Using Python Selenium driver, scrape data of places searched in google maps and store it in a excel sheet.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="service-item">
-                    <div class="icon"> <img src="https://iconape.com/wp-content/png_logo_vector/flutter.png" alt=""></div>
-                    <div>
-                        <h2>IleZaLitr - Flutter App, to see gas prices all around you on a map.</h2>
-                        <p>Using Flutter framework and Dart languange work on an cross platform app that, shows gas station, prices of oil all around you on a google's map. - still in progress...
-                        </p>
-                    </div>
-                </div>
-                <div class="service-item" style="background-image:  url(https://media.geeksforgeeks.org/wp-content/uploads/20190620121247/singleCrossover1-2.png);">
-                    <a href="https://github.com/Filipstrozik/Mini_Projekt">
-                        <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt=""></div>
-                        <div>
-                            <h2>Max3Sat - C++ Genetic Algorithm</h2>
-                            <p>Using Genetic Algorithm to find best solution in Max3Sat problem. Generating random population, crossing and mutating them to result in better and better solution.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="service-item" style="background-image:  url(https://raw.githubusercontent.com/Filipstrozik/FileOrganizer/main/fileorganizer.PNG);">
-                    <a href="https://github.com/Filipstrozik/FileOrganizer">
-                        <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png" alt="" ></div>
-                        <div>
-                            <h2>Python App File Organizer - Organize your files into extension directories in one click!.</h2>
-                            <p>Python desktop app that organizes your files by extension, date, recurcusive  or by creating only view of shortcuts.
-                            </p>
-                        </div>
-                    </a>
-                </div>      
-                <div class="service-item" style="background-image:  url(https://play-lh.googleusercontent.com/-2iffwzxEWvwDYqt5JxZqXdxxl2XwWBNZa7S_0KxRC721C2PhzFYW-q6U3o9N6OiUUw);">
-                    <a href="https://chic-eclair-d591d6.netlify.app">
-                        <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="" ></div>
-                        <div>
-                            <h2>Rock Paper Scissors - JavaScript, Socket.io.</h2>
-                            <p>JavaScript Server/Client web app, using socket.io. Play rock paper scissors muiltiplayer.
-                            </p>
-                        </div>
-                    </a>
-                </div>  
-            </div>
+      <div class="services container">
+        <div class="service-top">
+          <h1 class="section-title">Projects</h1>
+          <p>Here you can find some projects I've been working on!</p>
         </div>
+        <div class="service-bottom">
+          <div
+            class="service-item"
+            style="
+              background-image: url(https://cdn.discordapp.com/attachments/1067556578846318622/1069214113517019186/image.png);
+            "
+            );
+          >
+            <a href="https://github.com/Filipstrozik/FMKBook">
+              <div style="display: flex">
+                <div class="icon">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="icon">
+                  <img style="width: min-content;"
+                    src="https://objectpartners.com/wp-content/uploads/2015/02/spring-boot-project-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <h2>Seat Reservation Cinema System</h2>
+                <p>
+                  Fullstack app using Angular, Spring Boot and oracle DB. 
+                  Reservation system for seats in the cinema, movies, tickets and promo codes!.
+                  Project made in 2 weeks with two other programmers.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+          class="service-item"
+          style="
+            background-image: url(https://eversun.pl/924710-thickbox_default/cartridge-do-tatuazu-el-cartel-030-49-magnum-10szt.jpg);
+          "
+          );
+        >
+          <a href="https://github.com/Filipstrozik/ios_ecommerce_app">
+              <div class="icon">
+                <img
+                  src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-1024.png"
+                  alt=""
+                />
+              </div>
+            <div>
+              <h2>E-commerce iOS UI Project</h2>
+              <p>
+                Elcartel shop UI example in Swift for iOS.
+                Only user interface no backend and logic, will do it later...
+              </p>
+            </div>
+          </a>
+        </div>
+          <div
+            class="service-item"
+            style="
+              background-image: url(https://static.doofinder.com/main-files/uploads/2018/03/abandoned-cart-carritos-abandonados.jpg);
+            "
+            );
+          >
+            <a href="https://github.com/Filipstrozik/knsolvro">
+              <div class="icon">
+                <img
+                  src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>Shopping Cart based on User's Session - NestJS API</h2>
+                <p>
+                  Backend API to handle user cart functionalities, main feature
+                  is sharing the cart and copying it to other users session. It
+                  is my recruitment response for science club SOLVRO.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="service-item"
+            style="background-image: url(./images/gPlacestoExcel.PNG)"
+          >
+            <a href="https://github.com/Filipstrozik/GPlacesToExcel">
+              <div class="icon">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>
+                  Python Selenium Web Scraper - Google maps places to excel
+                  sheet.
+                </h2>
+                <p>
+                  Using Python Selenium driver, scrape data of places searched
+                  in google maps and store it in a excel sheet.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://iconape.com/wp-content/png_logo_vector/flutter.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>
+                IleZaLitr - Flutter App, to see gas prices all around you on a
+                map.
+              </h2>
+              <p>
+                Using Flutter framework and Dart languange work on an cross
+                platform app that, shows gas station, prices of oil all around
+                you on a google's map. - still in progress...
+              </p>
+            </div>
+          </div>
+          <div
+            class="service-item"
+            style="
+              background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20190620121247/singleCrossover1-2.png);
+            "
+          >
+            <a href="https://github.com/Filipstrozik/Mini_Projekt">
+              <div class="icon">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>Max3Sat - C++ Genetic Algorithm</h2>
+                <p>
+                  Using Genetic Algorithm to find best solution in Max3Sat
+                  problem. Generating random population, crossing and mutating
+                  them to result in better and better solution.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="service-item"
+            style="
+              background-image: url(https://raw.githubusercontent.com/Filipstrozik/FileOrganizer/main/fileorganizer.PNG);
+            "
+          >
+            <a href="https://github.com/Filipstrozik/FileOrganizer">
+              <div class="icon">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>
+                  Python App File Organizer - Organize your files into extension
+                  directories in one click!.
+                </h2>
+                <p>
+                  Python desktop app that organizes your files by extension,
+                  date, recurcusive or by creating only view of shortcuts.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="service-item"
+            style="
+              background-image: url(https://play-lh.googleusercontent.com/-2iffwzxEWvwDYqt5JxZqXdxxl2XwWBNZa7S_0KxRC721C2PhzFYW-q6U3o9N6OiUUw);
+            "
+          >
+            <a href="https://chic-eclair-d591d6.netlify.app">
+              <div class="icon">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>Rock Paper Scissors - JavaScript, Socket.io.</h2>
+                <p>
+                  JavaScript Server/Client web app, using socket.io. Play rock
+                  paper scissors muiltiplayer.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End Services section -->
-
 
     <!-- Learning section -->
 
     <section id="learning">
-        <div class="learning container">
-            <div class="service-top">
-                <h1 class="section-title">Learning</h1>
-                <p> Technology I'm currently learning about.</p>
-            </div>
-            <div class="learning-bottom">
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="" ></div>
-                    <h2>JavaScript</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://iconape.com/wp-content/png_logo_vector/flutter.png" alt=""></div>
-                    <h2>Flutter</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="" ></div>
-                    <h2>Dart</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://fs.siteor.com/javatech/files/layout/assan/vavatech/img/content/net_bez_tla.png?1614179368" alt="" ></div>
-                    <h2>.NET</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="" ></div>
-                    <h2>Angular</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" alt="" ></div>
-                    <h2>Spring</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://objectpartners.com/wp-content/uploads/2015/02/spring-boot-project-logo.png" alt="" ></div>
-                    <h2>Spring Boot</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="" ></div>
-                    <h2>NestJS</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"> <img src="https://images-na.ssl-images-amazon.com/images/I/41QodfboFdL.png" alt="" ></div>
-                    <h2>Oracle Database</h2>
-                </div>
-
-                <div class="learn-item">
-                    <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt=""></div>
-                    <h2>MySQL</h2>
-                </div>
-                
-            </div>
-
+      <div class="learning container">
+        <div class="service-top">
+          <h1 class="section-title">Learning</h1>
+          <p>Technology I'm currently learning about.</p>
         </div>
+        <div class="learning-bottom">
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+                alt=""
+              />
+            </div>
+            <h2>JavaScript</h2>
+          </div>
 
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://iconape.com/wp-content/png_logo_vector/flutter.png"
+                alt=""
+              />
+            </div>
+            <h2>Flutter</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png"
+                alt=""
+              />
+            </div>
+            <h2>Dart</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://fs.siteor.com/javatech/files/layout/assan/vavatech/img/content/net_bez_tla.png?1614179368"
+                alt=""
+              />
+            </div>
+            <h2>.NET</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+                alt=""
+              />
+            </div>
+            <h2>Angular</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png"
+                alt=""
+              />
+            </div>
+            <h2>Spring</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://objectpartners.com/wp-content/uploads/2015/02/spring-boot-project-logo.png"
+                alt=""
+              />
+            </div>
+            <h2>Spring Boot</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
+                alt=""
+              />
+            </div>
+            <h2>NestJS</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/41QodfboFdL.png"
+                alt=""
+              />
+            </div>
+            <h2>Oracle Database</h2>
+          </div>
+
+          <div class="learn-item">
+            <div class="icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png"
+                alt=""
+              />
+            </div>
+            <h2>MySQL</h2>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <!-- About section -->
     <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="images/CV-45.jpg" alt="img">
-                </div>
-            </div>
-            <div class="col-right">
-                <h1 class="section-title">About <span>me</span></h1>
-                <h2>Currently: Student of Applied Computer Science at WUST.</h2>
-                <p>
-                    Hi, my name is Filip Strózik. I'm a polish student of Applied Computer Science at WUST. Born in Lubin, Dolnysląsk. 
-                    Currently living in Wrocław. I love spending free time on producing music, making beats, recording vocals, mixing & mastering tracks.
-                    I'm interrested in technology such as: Blockchain, Smart Contracts, DeFi, Mobile Apps Development, WebScraping, Game Development and more...
-                </p>
-                <div>
-                    <img src="https://www.codewars.com/users/Filipstrozik/badges/large"  style="padding-left: 4px; padding-right: 4px; max-height: 100px" alt="very good at codewars">
-                </div>
-                <a href="https://drive.google.com/file/d/1ZWShJ7fH51hbd_xSjrmePZHYPOtDpGx1/view?usp=sharing" class="cta">Download Resume ENG</a>
-                <a href="https://drive.google.com/file/d/1jI4t0PraNfr3-JOQrKD3LTDpGTxliCK3/view?usp=sharing" class="cta">Download Resume POL</a>
-            </div>
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="images/CV-45.jpg" alt="img" />
+          </div>
         </div>
-
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Currently: Student of Applied Computer Science at WUST.</h2>
+          <p>
+            Hi, my name is Filip Strózik. I'm a polish student of Applied
+            Computer Science at WUST. Born in Lubin, Dolnysląsk. Currently
+            living in Wrocław. I love spending free time on producing music,
+            making beats, recording vocals, mixing & mastering tracks. I'm
+            interrested in technology such as: Blockchain, Smart Contracts,
+            DeFi, Mobile Apps Development, WebScraping, Game Development and
+            more...
+          </p>
+          <div>
+            <img
+              src="https://www.codewars.com/users/Filipstrozik/badges/large"
+              style="padding-left: 4px; padding-right: 4px; max-height: 100px"
+              alt="very good at codewars"
+            />
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1ZWShJ7fH51hbd_xSjrmePZHYPOtDpGx1/view?usp=sharing"
+            class="cta"
+            >Download Resume ENG</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1jI4t0PraNfr3-JOQrKD3LTDpGTxliCK3/view?usp=sharing"
+            class="cta"
+            >Download Resume POL</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- End About section  -->
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="contact container">
-            <div><h1 class="section-title">Contact me</h1></div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://toppng.com/uploads/preview/phone-icon-black-11549498509acfenofjly.png" alt=""></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>+48 661 935 263</h2>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="icon"><img src="http://simpleicon.com/wp-content/uploads/mail-6.png" alt=""></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>filiparkadiuszstrozik@gmail.com</h2>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="icon"><img src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png" alt=""></div>
-                    <div class="contact-info">
-                        <h1>Instagram</h1>
-                        <h2>filip_strozik</h2>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="icon"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt=""></div>
-                    <div class="contact-info">
-                        <a href="https://www.linkedin.com/in/filip-str%C3%B3zik-600466248/">
-                            <h1>LinkedIn</h1>
-                            <h2>Filip Strózik</h2>
-                        </a>
-                    </div>
-                </div>
+      <div class="contact container">
+        <div><h1 class="section-title">Contact me</h1></div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://toppng.com/uploads/preview/phone-icon-black-11549498509acfenofjly.png"
+                alt=""
+              />
             </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+48 661 935 263</h2>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="http://simpleicon.com/wp-content/uploads/mail-6.png"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>filiparkadiuszstrozik@gmail.com</h2>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Instagram</h1>
+              <h2>filip_strozik</h2>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+                alt=""
+              />
+            </div>
+            <div class="contact-info">
+              <a
+                href="https://www.linkedin.com/in/filip-str%C3%B3zik-600466248/"
+              >
+                <h1>LinkedIn</h1>
+                <h2>Filip Strózik</h2>
+              </a>
+            </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- End of Contact Section -->
 
     <!-- Section footer  -->
     <section id="footer">
-        <div class="footer container">
-            <div class="brand"><h1>Filip Strózik</h1></div>
-            <h2>Developer, Producer and Student</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="https://www.facebook.com/Filip.ZeaN"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt=""></a>
-                </div>
+      <div class="footer container">
+        <div class="brand"><h1>Filip Strózik</h1></div>
+        <h2>Developer, Producer and Student</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://www.facebook.com/Filip.ZeaN"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+                alt=""
+            /></a>
+          </div>
 
-                <div class="social-item">
-                    <a href="https://www.instagram.com/filip_strozik/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt=""></a>
-                </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/filip_strozik/"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+                alt=""
+            /></a>
+          </div>
 
-                <div class="social-item">
-                    <a href="https://www.youtube.com/channel/UC_P6Ud_smnE4TflZG2xq-sA"><img src="https://iconape.com/wp-content/files/st/371676/svg/youtube-logo-icon-png-svg.png" alt=""></a>
-                </div>
+          <div class="social-item">
+            <a href="https://www.youtube.com/channel/UC_P6Ud_smnE4TflZG2xq-sA"
+              ><img
+                src="https://iconape.com/wp-content/files/st/371676/svg/youtube-logo-icon-png-svg.png"
+                alt=""
+            /></a>
+          </div>
 
-                <div class="social-item">
-                    <a href="https://mobile.twitter.com/filipstr1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" alt=""></a>
-                </div>
-            </div>
-            <p>Copyright 2022 Filip Strózik. All rights reserved</p>
+          <div class="social-item">
+            <a href="https://mobile.twitter.com/filipstr1"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png"
+                alt=""
+            /></a>
+          </div>
         </div>
-
+        <p>Copyright 2022 Filip Strózik. All rights reserved</p>
+      </div>
     </section>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
