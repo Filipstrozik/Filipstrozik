@@ -275,6 +275,7 @@ a{
     font-weight: 300;
     letter-spacing: 0.3rem;
     /* padding: 10px 5%; niepotrzebne */
+    margin: 1.8rem;
 }
 #services .service-bottom{
     display: flex;
@@ -365,6 +366,7 @@ img{
     font-weight: 300;
     letter-spacing: 0.3rem;
     /* padding: 10px 5%; niepotrzebne */
+    margin: 1.8rem;
 }
 
 #learning .learn-item {
@@ -397,7 +399,6 @@ img{
 }
 
 #learning img{
-    width: 100px;
     height: 100px;
 }
 
