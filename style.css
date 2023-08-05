@@ -299,7 +299,7 @@ a{
     z-index: 1;
     overflow: hidden;
     transition: 100ms;
-    filter: drop-shadow(10px 10px 10px black)
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4);
 }
 #services .service-item:hover{
     transform: scale(1.1);
@@ -384,7 +384,7 @@ a{
     position: relative;
     z-index: 1;
     transition: 100ms;
-    filter: drop-shadow(10px 10px 10px black)
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4);
 }
 
 
