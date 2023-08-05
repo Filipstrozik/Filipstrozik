@@ -335,9 +335,9 @@ a{
     line-height: 1.9rem;
 }
 
-img{
-    width: 100%;
+#services .service-item img {
     height: 100%;
+    width: auto;
 }
 
 
@@ -383,7 +383,6 @@ img{
     margin: 10px 5%;
     position: relative;
     z-index: 1;
-    overflow: hidden;
     transition: 100ms;
     filter: drop-shadow(10px 10px 10px black)
 }
@@ -398,8 +397,13 @@ img{
     transform: scale(1.1);
 }
 
-#learning img{
-    height: 100px;
+.learn-item .icon {
+    width: 100px;
+}
+
+.learn-item .icon img {
+    height: auto;
+    width: 100%;
 }
 
 @keyframes text_reveal_box{
@@ -492,6 +496,12 @@ img{
     box-shadow: 0px 0px 18px 0 black;
     transition: 200ms;
 }
+
+#about .col-left .about-img img {
+    height: 100%;
+    width: 100%;
+}
+
 #about .col-left .about-img:hover{
     transform: scale(1.1);
 }
@@ -507,6 +517,8 @@ img{
     z-index: -1;
     box-shadow: 0px 0px 18px 0 black;
 }
+
+
 
 /* Contact section  */
 
@@ -537,6 +549,14 @@ img{
     transition: .4s ease box-shadow;
     filter: grayscale(100%)
 }
+
+#contact .contact-item img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    filter: grayscale(100%)
+}
+
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 black;
 }
@@ -593,6 +613,8 @@ img{
 
 #footer .social-item img{
     filter: grayscale(1);
+    height: 100%;
+    width: 100%;
     transition: .3s ease filter;
 }
 
@@ -658,6 +680,12 @@ img{
 		height: 100%;
 		padding-left: 60px;
 	}
+
+    #about .col-left .about-img {
+        height: 100%;
+        width: 100%;
+    }
+
 	#about .about .col-left .about-img::after {
 		left: -45px;
 		top: 24px;
@@ -698,7 +726,9 @@ img{
 		width: 100px;
 	}
 	#contact .contact-item .icon img {
-		object-fit: contain;
+        width: 100%;
+        height: auto;
+		object-fit: fill;
         filter: grayscale(100%)
 	}
 	#contact .contact-item .contact-info {
