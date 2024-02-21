@@ -4,9 +4,8 @@
 
 ## 🚀 About Me
 
-I am a third year student of Applied Computer Science at WUST. Most knowledge I currently have in C#, .NET, TS, Angular, Relational Databases.
-Currently working as a junior fullstack developer at Alfa-Net Wrocław.
-
+I am a software engineer of Applied Computer Science at WUST. Most knowledge I currently have in C#, .NET Core, Entity Framework, TS, Angular, Relational Databases, React, Python, some ML
+Currently working as a junior fullstack developer at Alfa-Net Wrocław and taking master studies on Artifitial Inteligence at WUST/
 
 
 ## 🛠 Skills
@@ -14,13 +13,13 @@ Frontend:
 Angular, somehow React
 
 Backend: 
-.NET, Spring Boot, Nest.js
+.NET Core, Spring Boot, Nest.js
 
 DB:
 SQL Server, Oracle
 
 Other:
-Docker, Git
+Docker, Git, Entity Framework
 
 
 ## 🔗 Links
