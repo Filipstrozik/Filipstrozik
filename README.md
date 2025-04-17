@@ -5,12 +5,17 @@
 ## 🚀 About Me
 
 I am a software engineer of Applied Computer Science at WUST. Most knowledge I currently have in C#, .NET Core, Entity Framework, TS, Angular, Relational Databases, React, Python, Machine Learning
-Currently working as a junior fullstack developer at Alfa-Net Wrocław and taking master studies on Artifitial Inteligence at WUST
+Currently working as a fullstack developer at Alfa-Net Wrocław and taking master studies on Artifitial Inteligence at WUST.
+I put strong focus on personal development and learning.
 
 
 ## 🛠 Skills
-ML:
-Python
+### ML: [Python]
+- 🔎 [AIxposure](https://github.com/Filipstrozik/AIxposure): Wrapped Deepfake & AI generated content detectors into a background-running mobile application.
+- 🪪 [SV-eval](https://github.com/Filipstrozik/SV-eval): A processing pipeline for evaluating the impact of noise on voice authentication.
+- 🗺️ [spatial-data](https://github.com/Filipstrozik/spatial-data) & [sat-trees-detection](https://github.com/Filipstrozik/sat-trees-detection): Web scraping of satellite data, creation of a custom dataset, and training a custom Eclipse-RCNN model for object detection on satellite images.
+- 🔊 [sound_cluster](https://github.com/Filipstrozik/sound_cluster): A side project for spatial audio visualization aimed at music production applications.
+
 
 Frontend:
 Angular, somehow React, HTML, CSS
