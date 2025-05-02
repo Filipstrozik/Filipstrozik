@@ -11,6 +11,7 @@ I put strong focus on personal development and learning.
 
 ## 🛠 Skills
 ### ML: [Python]
+- 🏫 [Polwro MLOps Pipeline](https://github.com/Filipstrozik/lsdp-mini-project): Complete MLOps pipeline for scraping, processing, and exposing trained model from the Polwro forum reviews. 
 - 🔎 [AIxposure](https://github.com/Filipstrozik/AIxposure): Wrapped Deepfake & AI generated content detectors into a background-running mobile application.
 - 🪪 [SV-eval](https://github.com/Filipstrozik/SV-eval): A processing pipeline for evaluating the impact of noise on voice authentication.
 - 🗺️ [spatial-data](https://github.com/Filipstrozik/spatial-data) & [sat-trees-detection](https://github.com/Filipstrozik/sat-trees-detection): Web scraping of satellite data, creation of a custom dataset, and training a custom Eclipse-RCNN model for object detection on satellite images.
