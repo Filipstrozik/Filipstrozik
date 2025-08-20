@@ -1,4 +1,17 @@
 /* Achievements flex container utility */
+#achievements {
+    background: linear-gradient(135deg, rgba(3, 22, 69, 0.694), rgba(6, 35, 81, 0.798));
+}
+
+
+#achievements .achievements-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .flex-achievements {
   display: flex;
   flex-wrap: wrap;
@@ -33,12 +46,12 @@
   margin: 8px;
 }
 .achievement-card h3 {
-  color: #222;
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 12px;
 }
 .achievement-card p {
-  color: #444;
+  color: #ffffff;
 }
 
 /* Contact Item Liquid Glass Style */
@@ -87,6 +100,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 6rem 2rem;
 }
 
 .fullpage-container{
@@ -284,7 +298,7 @@ h2 {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 6vw;
     position: relative;
     color: transparent;
     animation: text_reveal 0.5s ease forwards;
@@ -325,21 +339,21 @@ h2 {
     margin-right: auto;
     display: inline-block;
     position: sticky;
-    padding: 10px 30px;
     color: white;
-    background-color: transparent;
-    border: 2px solid wheat;
     font-size: 2rem;
     letter-spacing: .1rem;
     margin-top: 20px;
     transition: .5s ease background-color;
     transition-property: background-color, color;
-
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.264);
+    border-radius: 18px;
+    padding: 10px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .cta:hover{
     color: rgb(16, 112, 201);
     background-color: rgb(231, 209, 171);
-    border: 2px solid cornflowerblue;
 }
 .brand h1{
     font-size: 3rem;
@@ -357,7 +371,6 @@ h2 {
     flex-direction:  column;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .section-title{
@@ -365,6 +378,7 @@ h2 {
     padding-top: 50px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 #services .service-top p {
@@ -378,7 +392,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
     flex-wrap: wrap;
 }
 
@@ -386,12 +399,12 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 4rem;
     width: 100%;
 }
 
 
 #services .service-item{
-    flex-basis: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -409,6 +422,34 @@ h2 {
     width: 800px;
 }
 
+#services .item-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#services .item-description {
+    color: white;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+#services .item-tag-group {
+    margin: 0.5rem 0;
+}
+
+#services .badge {
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.132);
+    border-radius: 18px;
+    padding: 0.5em 1em;
+    margin: 4px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+
 #services .service-item:hover{
     transform: scale(1.01);
 }
@@ -419,7 +460,7 @@ h2 {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #29323ce3 0%, #345c86 100%);
     opacity: 0.83;
     z-index: -1;
 }
@@ -433,7 +474,6 @@ h2 {
 #services .service-item h2 {
     color: white;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 #services .service-item p {
@@ -447,33 +487,39 @@ h2 {
 }
 
 
+.subsection-title {
+    color: wheat;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-/* learning  section */
-#learning {
+
+/* skills  section */
+#skills {
     background-color: #171d36;
 }
-#learning .learning {
+#skills .learning {
     flex-direction:  column;
     max-width: 1500px;
     margin: 0 auto;
 }
 
-#learning .learning-bottom{
+#skills .learning-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     flex-wrap: wrap;
 }
 
-#learning .service-top p {
+#skills .service-top p {
     margin-top: 5px;
     color: white;
     margin: 1.8rem;
 }
 
-#learning .learn-item {
-    /* flex-basis: 80%; */
+#skills .learn-item {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -491,12 +537,12 @@ h2 {
 }
 
 
-#learning .service-bottom .icon {
+#skills .service-bottom .icon {
     height: 100px;
     width: 100px;
 }
 
-#learning .learn-item:hover{
+#skills .learn-item:hover{
     transform: scale(1.1);
 }
 
@@ -542,9 +588,9 @@ h2 {
     text-align: center;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5rem 5rem;
     align-items: center;
     color: white;
+    gap: 4rem;
 }
 
 
@@ -601,7 +647,7 @@ h2 {
 
 #about .about-img {
     aspect-ratio: 1 / 1;
-    max-width: 40%;
+    width: 100%;
     position: relative;
     border: 5px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 18px 0 black;
@@ -634,7 +680,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     max-width: 1500px;
-    margin: 0 2rem;
     gap: 2rem;
 }
 
@@ -712,11 +757,10 @@ h2 {
 }
 
 #footer .footer{
-    min-height: 200px;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    padding: 1rem 0;
 }
 
 #footer h2{
@@ -761,6 +805,10 @@ h2 {
     text-decoration: underline;
 }
 
+h1.section-title {
+    font-size: 4rem;
+}
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
     h1.section-title {
@@ -769,7 +817,7 @@ h2 {
 
     /* Hero */
     #hero h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     #hero .hero-text {
@@ -780,12 +828,13 @@ h2 {
         display: flex;
         flex-direction: row;
     }
+
+    #hero .hero-image-frame {
+        max-width: 60%;
+    }
     /* End Hero */
 
     /* Services Section */
-    #services .service-bottom .service-item {
-        flex-basis: 45%;
-    }
     /* End Services Section */
 
     /* Project */
@@ -818,8 +867,8 @@ h2 {
     }
 
     #about .about-img {
-        height: 100%;
-        width: 100%;
+        aspect-ratio: 1 / 1;
+        width: 40%;
     }
 
 
