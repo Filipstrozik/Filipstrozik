@@ -1,8 +1,7 @@
-/* Achievements flex container utility */
+/* Achievements section */
 #achievements {
     background: linear-gradient(135deg, rgba(3, 22, 69, 0.694), rgba(6, 35, 81, 0.798));
 }
-
 
 #achievements .achievements-col{
     display: flex;
@@ -11,60 +10,18 @@
     justify-content: center;
 }
 
-
-.flex-achievements {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 48px;
-}
-/* Liquid Glass Badges for Languages */
-.lang-badge {
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.264);
-  border-radius: 18px;
-  padding: 10px 24px;
-  margin: 4px;
-  font-size: 1.5rem;
-  color: #ffffff;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
-  border: 1px solid rgba(255,255,255,0.3);
-  display: inline-block;
-}
-
-/* Achievements Card Style */
-.achievement-card {
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.18);
-  border-radius: 18px;
-  padding: 32px 40px;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
-  border: 1px solid rgba(255,255,255,0.3);
-  min-width: 220px;
-  max-width: 320px;
-  margin: 8px;
-}
-.achievement-card h3 {
-  color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-.achievement-card p {
-  color: #ffffff;
-}
-
-/* Contact Item Liquid Glass Style */
-.contact-item.liquid {
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.18);
-  border-radius: 18px;
-  padding: 24px 32px;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
-  border: 1px solid rgba(255,255,255,0.3);
-  display: flex;
-  align-items: center;
-  gap: 16px;
+/* Glass effect utility class for badges and cards */
+.glass-badge {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.264);
+    border-radius: 18px;
+    padding: 10px 24px;
+    margin: 4px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    display: inline-block;
 }
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@418&display=swap');
 
@@ -280,7 +237,6 @@ h2 {
 }
 
 #hero .hero-image-frame {
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
     padding: 10;
     display: flex;
     align-items: center;
@@ -293,6 +249,10 @@ h2 {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    animation: hero_image_reveal 1s ease forwards;
+    animation-delay: 4s;
 }
 
 #hero h1 {
@@ -519,40 +479,9 @@ h2 {
     margin: 1.8rem;
 }
 
-#skills .learn-item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #cccccc;
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-    transition: 100ms;
-    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4);
-}
-
-
 #skills .service-bottom .icon {
     height: 100px;
     width: 100px;
-}
-
-#skills .learn-item:hover{
-    transform: scale(1.1);
-}
-
-.learn-item .icon {
-    width: 100px;
-}
-
-.learn-item .icon img {
-    height: auto;
-    width: 100%;
 }
 
 @keyframes text_reveal_box{
@@ -573,6 +502,16 @@ h2 {
 @keyframes text_reveal_name{
     100%{
         color: wheat;
+    }
+}
+@keyframes hero_image_reveal{
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 
@@ -683,6 +622,7 @@ h2 {
     gap: 2rem;
 }
 
+/* Use glass-badge class for consistency */
 .exp-item {
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.264);
@@ -693,62 +633,6 @@ h2 {
     color: #ffffff;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Contact section  */
-
-#contact .contact{
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 0px;
-    width: 90%;
-}
-#contact .contact-items {
-    width: 500px;
-    padding: 30px;
-    width: 100%;
-}
-
-#contact .contact-item {
-    /* width: max-content; */
-    text-align: center;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 30px 0 black;
-    transition: .4s ease box-shadow;
-    filter: grayscale(100%)
-}
-
-#contact .contact-item img {
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px;
-    filter: grayscale(100%)
-}
-
-#contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 black;
-}
-#contact .icon{
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-#contact .contact-info h1{
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-#contact .contact-info h2{
-    font-weight: 500;
 }
 
 /* Footer section  */
@@ -767,28 +651,6 @@ h2 {
     color: wheat;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-#footer .social-icon{
-    display: flex;
-    margin-bottom: 30px;
-}
-
-#footer .social-item{
-    height: 50px;
-    width: 50px;
-    margin: 0 5px;
-}
-
-#footer .social-item img{
-    filter: grayscale(1);
-    height: 100%;
-    width: 100%;
-    transition: .3s ease filter;
-}
-
-#footer .social-item:hover img{
-    filter: grayscale(0);
 }
 
 #footer p{
@@ -838,22 +700,12 @@ h1.section-title {
     /* End Services Section */
 
     /* Project */
-    #projects .project-item {
+    #services .service-item {
         flex-direction: column;
     }
-    #projects .project-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    #projects .project-item {
+    #services .service-item {
         height: 400px;
         width: 100%;
-        border-radius: 0;
-    }
-    #projects .all-projects .project-info {
-        height: 100%;
-    }
-    #projects .all-projects .project-img {
-        height: 100%;
     }
     /* End Project */
 
@@ -880,42 +732,6 @@ h1.section-title {
         text-align: center;
     }
     /* End About */
-
-    /* contact  */
-    #contact .contact {
-        flex-direction: column;
-        padding: 100px 0;
-        align-items: center;
-        justify-content: center;
-        min-width: 20vh;
-    }
-    #contact .contact-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 50px;
-    }
-    #contact .contact-item {
-        width: fit-content;
-        margin: 10px;
-        flex-direction: row;
-    }
-    #contact .contact-item .icon {
-        height: 100px;
-        width: 100px;
-    }
-    #contact .contact-item .icon img {
-        width: 100%;
-        height: auto;
-        object-fit: fill;
-        filter: grayscale(100%)
-    }
-    #contact .contact-item .contact-info {
-        width: 100%;
-        text-align: left;
-        padding-left: 20px;
-    }
-    /* End contact  */
 }
 /* End Media Query For Tablet */
 
