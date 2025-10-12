@@ -4,8 +4,8 @@
 
 ## 🚀 About Me
 
-I am a software engineer of Applied Computer Science at WUST. Most knowledge I currently have in C#, .NET Core, Entity Framework, TS, Angular, Relational Databases, React, Python, Machine Learning
-Currently working as a fullstack developer at Alfa-Net Wrocław and taking master studies on Artifitial Inteligence at WUST.
+I am a software engineer of Applied Computer Science (BSc 2023) and Artificial Inteligence (MSc) at WUST. Most knowledge I currently have in C#, .NET Core, Entity Framework, TS, Angular, Relational Databases, React, Python, Machine Learning, AI, Sound Engineering, Voice Verification.
+Currently working as a mid fullstack developer at Uhlmann Pac-Systeme (Germany - Remote)
 I put strong focus on personal development and learning.
 
 
