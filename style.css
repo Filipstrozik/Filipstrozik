@@ -33,11 +33,13 @@
 
 body {
     overscroll-behavior: none;
+    background-color: #08060c;
 }
 
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    background-color: #08060c;
 }
 
 a{
@@ -75,7 +77,7 @@ h2 {
     height: auto;
 }
 #header .header {
-    min-height: 8vh;
+    min-height: 64px;
     background-color: rgba(31, 30, 30, 0.24);
     transition: 0.3s ease background-color;
 }
@@ -94,26 +96,58 @@ h2 {
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 20px;
+    padding: 0 16px;
+}
+#header .nav-list {
+    position: relative;
 }
 #header .nav-list ul {
     list-style: none;
     position: absolute;
     background-color: rgba(31, 30, 30, 0.891);
-    width: 100vw;
-    height: 100vh;
-    left: 100%;
-    top: 0;
+    width: min(70vw, 360px);
+    max-height: calc(100vh - 64px);
+    height: auto;
+    padding: 18px 16px 22px;
+    border-radius: 0 0 0 18px;
+    right: 0;
+    top: 64px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 1;
     overflow-x: hidden;
-    transition: 0.5s ease left;
+    transform: translateX(110%);
+    transition: 0.5s ease transform;
 }
 #header .nav-list ul.active {
-    left: 0%;
+    transform: translateX(0);
+}
+#header .mobile-profile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 4px 12px 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: right;
+}
+#header .mobile-profile strong {
+    font-size: 1.8rem;
+}
+#header .mobile-profile span,
+#header .mobile-profile a {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+}
+#header .mobile-profile a {
+    padding: 4px 0 0 !important;
+    white-space: normal;
 }
 #header .nav-list ul a {
     font-size: 2.5rem;
@@ -121,7 +155,7 @@ h2 {
     letter-spacing: 0.2rem;
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 12px;
     display: block;
 }
 #header .nav-list ul a::after {
@@ -144,8 +178,8 @@ h2 {
     color: wheat;
 }
 #header .hamburger {
-    height: 60px;
-    width: 60px;
+    height: 48px;
+    width: 48px;
     display: inline-block;
     border: 3px solid white;
     border-radius: 50%;
@@ -155,7 +189,7 @@ h2 {
     justify-content: center;
     z-index: 100;
     cursor: pointer;
-    transform: scale(0.8);
+    transform: none;
     margin-right: 0px;
 }
 #header .hamburger:after {
@@ -169,7 +203,7 @@ h2 {
 }
 #header .hamburger .bar {
     height: 2px;
-    width: 30px;
+    width: 24px;
     position: relative;
     background-color: white;
     z-index: -1;
@@ -392,6 +426,22 @@ h2 {
     color: white;
     text-align: left;
     margin: 1rem 0;
+}
+
+#services .item-description ul {
+    margin: 0;
+    padding-left: 2.2rem;
+}
+
+#services .item-description li {
+    margin-bottom: 0.6rem;
+    padding-left: 0.3rem;
+    font-size: large;
+    line-height: 1.4;
+}
+
+#services .item-description li:last-child {
+    margin-bottom: 0;
 }
 
 #services .item-tag-group {
@@ -628,12 +678,100 @@ h2 {
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.264);
     border-radius: 18px;
-    padding: 10px 24px;
+    padding: 18px 24px;
     margin: 4px;
     font-size: 1.5rem;
     color: #ffffff;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#experience .exp-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#experience .exp-item h2 {
+    margin-bottom: 4px;
+}
+
+#experience .exp-item h3 {
+    margin-bottom: 12px;
+    color: wheat;
+}
+
+#experience .exp-date {
+    flex-shrink: 0;
+    color: wheat;
+    font-size: 1.4rem;
+    text-align: right;
+    white-space: nowrap;
+}
+
+#experience .exp-duration {
+    display: block;
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#experience .exp-item ul {
+    margin: 0;
+    padding-left: 2.2rem;
+}
+
+#experience .exp-item li {
+    padding-left: 0.4rem;
+    margin-bottom: 6px;
+    font-size: large;
+    line-height: 1.45;
+}
+
+#experience .exp-item li:last-child {
+    margin-bottom: 0;
+}
+
+#experience .item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+#experience .badge {
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.132);
+    border-radius: 18px;
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+    #header .mobile-profile {
+        display: flex;
+    }
+
+    #experience .exp-heading {
+        display: block;
+    }
+
+    #experience .exp-date {
+        display: block;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    #experience .exp-duration {
+        display: inline;
+        margin-left: 6px;
+    }
 }
 
 /* Footer section  */
@@ -674,6 +812,41 @@ h1.section-title {
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
+    #header .mobile-profile {
+        display: none !important;
+    }
+
+    #header .hamburger {
+        display: none;
+    }
+
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        width: fit-content;
+        max-height: none;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        transform: none;
+        transition: none;
+        overflow: visible;
+    }
+
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+
+    #header .nav-list ul li a {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+
+    #header .nav-list ul a::after {
+        display: none;
+    }
+
     h1.section-title {
         font-size: 6rem;
     }
