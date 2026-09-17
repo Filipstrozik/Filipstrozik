@@ -27,14 +27,16 @@ jobs:
           root_file: resume.tex
           working_directory: resume
           compiler: pdflatex
-          args: -interaction=nonstopmode -halt-on-error
+          args: -pdf -interaction=nonstopmode -halt-on-error
 
       - name: Assemble Pages artifact
         run: |
           mkdir -p _site/resume
           cp index.html style.css app.js _site/
           cp -R images _site/
-          cp "resume/Filip Strózik resume.pdf" "_site/resume/Filip Strózik resume.pdf"
+          pdf_path=$(find resume -maxdepth 1 -type f -name '*.pdf' -print -quit)
+          test -n "$pdf_path"
+          cp "$pdf_path" "_site/resume/Filip Strózik resume.pdf"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
