@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+
+# LaTeX build artifacts
+resume/*.aux
+resume/*.fdb_latexmk
+resume/*.fls
+resume/*.log
+resume/*.out
+resume/*.synctex.gz
+resume/*.toc

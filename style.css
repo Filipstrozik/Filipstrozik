@@ -350,6 +350,40 @@ h2 {
     color: rgb(16, 112, 201);
     background-color: rgb(231, 209, 171);
 }
+.resume-preview {
+    display: flex;
+    width: 100%;
+    margin: 2rem auto 0;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: transform 0.25s ease;
+}
+.resume-preview:hover {
+    transform: translateY(-4px);
+}
+.resume-preview-frame {
+    display: block;
+    width: 100%;
+    aspect-ratio: 0.707;
+    overflow: hidden;
+    background: white;
+    border: 4px solid rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+}
+.resume-preview iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.resume-preview-caption {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+}
 .brand h1{
     font-size: 3rem;
     color: white;
@@ -894,6 +928,10 @@ h1.section-title {
 
     #about .about-img {
         aspect-ratio: 1 / 1;
+        width: 40%;
+    }
+
+    #about .resume-preview {
         width: 40%;
     }
 
