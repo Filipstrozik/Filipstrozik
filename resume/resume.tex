@@ -1,0 +1,119 @@
+\documentclass[8pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.35in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=1pt,parsep=0pt}
+\definecolor{accent}{HTML}{1D4ED8}
+
+\newcommand{\headerrow}[2]{%
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    #1 & #2 \\
+  \end{tabular*}%
+}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1pt}\hrule\vspace{-1pt}
+  \subsection*{\large\color{accent}#1}
+  \vspace{-9pt}
+}
+
+\newcommand{\entry}[4]{%
+  \headerrow{\textbf{#1}}{\textbf{#2}}
+  \headerrow{\emph{#3}}{\emph{#4}}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Filip Strózik}}\\[2pt]
+Full-Stack Software Engineer $\mid$ AI/ML Engineer\\[2pt]
+Wrocław, Poland $\mid$ +48 661 935 263 $\mid$
+\href{mailto:filiparkadiuszstrozik@gmail.com}{filiparkadiuszstrozik@gmail.com} $\mid$
+\href{https://github.com/Filipstrozik}{github.com/Filipstrozik} $\mid$
+\href{https://www.linkedin.com/in/filip-str%C3%B3zik-600466248/}{LinkedIn}
+\end{center}
+
+\cvsection{Summary}
+Full-stack software engineer focused on .NET and Angular, with experience in web applications, testing, deployment, and maintainable architecture. AI master's graduate with practical work in machine learning, computer vision, audio analysis, and speaker verification.
+
+\cvsection{Experience}
+\entry{Uhlmann Pac-Systeme (Pexcite)}{09/2025--Present}{Full-Stack Developer}{.NET, Angular}
+\begin{itemize}
+  \item Develop large-scale logistics applications with .NET and Angular.
+  \item Implement new features and optimize existing functionality.
+  \item Work with modular architecture, system diagrams, SignalR, and RabbitMQ.
+  \item Architect and implement a simulation service for real machine connection states and message handling.
+  \item Build Cypress end-to-end test automation for production validation.
+  \item Develop Angular components for real-time connection monitoring and document maintainable architecture.
+\end{itemize}
+\vspace{3pt}
+
+\entry{OAI Poland}{02/2026--05/2026}{ML Engineer, Data Scientist}{Python, Machine Learning}
+\begin{itemize}
+  \item Prepare an Artificial Intelligence Olympiad task for Poland 2026.
+  \item Design Task Arithmetics challenges involving model weights.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Alfa-Net}{02/2023--08/2025}{Full-Stack Developer}{.NET, Angular}
+\begin{itemize}
+  \item Deploy services with Docker and manage database migrations.
+  \item Configure production load balancers.
+  \item Deliver core features across active projects.
+  \item Plan and manage Playwright end-to-end testing in GitLab pipelines.
+\end{itemize}
+\vspace{3pt}
+
+\entry{OAI Poland}{04/2025--06/2025}{ML Engineer, Data Scientist}{Python, Machine Learning}
+\begin{itemize}
+  \item Prepare one of the final tasks for the Artificial Intelligence Olympiad in Poland 2025.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Alfa-Net}{01/2023--02/2023}{Junior Full-Stack Developer}{.NET, Angular}
+\begin{itemize}
+  \item Build responsive web applications with .NET and Angular.
+  \item Contribute to multiple application projects across the full stack.
+\end{itemize}
+
+
+
+\cvsection{Selected Projects}
+\textbf{SV-Eval -- Speaker Verification} \hfill \href{https://github.com/Filipstrozik/SV-eval}{GitHub}\\
+Evaluated the impact of noise on voice authentication across multiple speaker-verification models.
+
+\textbf{Polwro MLOps Pipeline} \hfill \href{https://github.com/Filipstrozik/lsdp-mini-project}{GitHub}\\
+Built an MLOps pipeline for scraping, processing, and serving models from Polwro forum reviews.
+
+\textbf{Satellite Trees Detection} \hfill \href{https://github.com/Filipstrozik/spatial-data}{GitHub}\\
+Created satellite-image datasets and trained an Eclipse-RCNN tree-detection model; published datasets on Hugging Face.
+
+\textbf{Sound Cluster} \hfill \href{https://github.com/Filipstrozik/sound_cluster}{GitHub}\\
+Built an audio-analysis and PCA-clustering visualization tool for music-production applications.
+
+\cvsection{Technical Skills}
+\textbf{Languages:} C\#, Python, TypeScript, JavaScript, SQL, HTML, CSS\\
+\textbf{Backend:} .NET, ASP.NET Core, Entity Framework, Spring Boot, Nest.js\\
+\textbf{Frontend:} Angular, React, Angular Material\\
+\textbf{Testing and delivery:} Cypress, Playwright, Jest, Docker, GitLab CI/CD, Azure DevOps\\
+\textbf{Machine learning:} PyTorch, scikit-learn, Pandas, NumPy, OpenCV, Hugging Face, audio processing\\
+\textbf{Infrastructure:} Azure, Linux, Docker, nginx, Apache Spark, Celery, RabbitMQ, Redis, MongoDB\\
+\textbf{Languages:} English (C1+), German (A2)
+
+\cvsection{Education}
+\entry{Wrocław University of Science and Technology}{2023--2025}{M.Sc. Artificial Intelligence}{Thesis: Analysis of noisy samples in speaker authorization}
+\entry{Wrocław University of Science and Technology}{2019--2023}{B.Sc. Applied Computer Science}{Thesis: A system supporting car-parking operations -- ParkVision}
+
+\cvsection{Achievement}
+\textbf{BeeARD x Science Hackathon 2025} -- 2nd place; co-authored an AI research platform with agent-tool integrations.
+
+\end{document}
