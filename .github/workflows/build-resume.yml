@@ -26,7 +26,7 @@ jobs:
         with:
           root_file: resume.tex
           working_directory: resume
-          args: -jobname="Filip Strózik resume" -interaction=nonstopmode -halt-on-error
+          args: -interaction=nonstopmode -halt-on-error
 
       - name: Assemble Pages artifact
         run: |

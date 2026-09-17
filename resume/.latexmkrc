@@ -1,0 +1,1 @@
+$jobname = 'Filip Strózik resume';
