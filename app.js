@@ -25,6 +25,22 @@ menu_item.forEach((item) => {
 });
 
 const experienceItems = document.querySelectorAll('.exp-item[data-start][data-end]');
+const careerDuration = document.querySelector('#career-duration');
+
+if (careerDuration) {
+  const careerStart = careerDuration.closest('[data-career-start]').dataset.careerStart;
+  const start = new Date(`${careerStart}-01T00:00:00`);
+  const now = new Date();
+  const totalMonths = (now.getFullYear() - start.getFullYear()) * 12 + now.getMonth() - start.getMonth() + 1;
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const duration = [];
+
+  if (years > 0) duration.push(`${years} ${years === 1 ? 'year' : 'years'}`);
+  if (months > 0) duration.push(`${months} ${months === 1 ? 'month' : 'months'}`);
+
+  careerDuration.textContent = duration.join(', ');
+}
 
 experienceItems.forEach((item) => {
   const start = new Date(`${item.dataset.start}-01T00:00:00`);
